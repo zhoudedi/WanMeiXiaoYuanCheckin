@@ -7,7 +7,7 @@
 <a id="more"></a>
 
 <div class="note note-success">
-            <p>项目地址：<a target="_blank" rel="noopener" href="https://github.com/ReaJason/17wanxiaoCheckin">https://github.com/ReaJason/17wanxiaoCheckin</a></p>
+            <p>项目地址：<a target="_blank" rel="noopener" href="https://github.com/zhoudedi/WanMeiXiaoYuanCheckin">https://github.com/zhoudedi/WanMeiXiaoYuanCheckin</a></p>
           </div>
 
 
