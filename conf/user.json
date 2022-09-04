@@ -73,6 +73,12 @@
         "type": "send",  //  send 私聊消息推送，group 群消息推送
         "qq_num": "**"  // 上面设置send，则填写接受推送的qq号，group则填写群号，根据官网要求群号需要邮箱申请才能推送
       },
+      "qq": {  //  QQ：http://gm.zhoudedi.top:300/ 使用通道添加QQ好友：2933206697
+        "enable": false,  // true 为打开，false 为关闭
+        "key": "xiaozhou",  // 推送所必须的 key 默认xiaozhou
+        "type": "private",  //  private 私聊消息推送，group 群消息推送
+        "qq_num": "****"  // 上面设置private，则填写接受推送的qq号，group则填写群号，使用通道添加QQ好友：2933206697
+      },
       "pipehub": { //  PipeHub：https://www.pipehub.net/
         "enable": false,
         "key": ""
@@ -83,11 +89,6 @@
         "corp_secret":  "", // 自建应用 Secret
         "agent_id":  "",  // 应用 ID
         "to_user": ""  // 接收者用户，多用户用|分割，所有用户填写 @all
-      },
-      "bark": { // Bark: https://github.com/Finb/Bark
-        "enable": false,
-        "device_key": "", // Bark device_key
-        "group": "健康打卡" // 推送消息分组
       }
     }
   },
@@ -164,6 +165,12 @@
         "type": "send",  //  send 私聊消息推送，group 群消息推送
         "qq_num": ""  // 上面设置send，则填写接受推送的qq号，group则填写群号，根据官网要求群号需要邮箱申请才能推送
       },
+      "qq": {  //  QQ：http://gm.zhoudedi.top:300/ 使用通道添加QQ好友：2933206697
+        "enable": false,  // true 为打开，false 为关闭
+        "key": "xiaozhou",  // 推送所必须的 key 默认xiaozhou
+        "type": "private",  //  private 私聊消息推送，group 群消息推送
+        "qq_num": "****"  // 上面设置private，则填写接受推送的qq号，group则填写群号，使用通道添加QQ好友：2933206697
+      },
       "pipehub": { //  PipeHub：https://www.pipehub.net/
         "enable": false,
         "key": ""
@@ -174,11 +181,6 @@
         "corp_secret":  "", // 自建应用 Secret
         "agent_id":  "",  // 自建应用 ID
         "to_user": ""  // 接收者用户，多用户用|分割，所有用户填写 @all
-      },
-      "bark": { // Bark: https://github.com/Finb/Bark
-        "enable": false,
-        "device_key": "", // Bark device_key
-        "group": "健康打卡" // 推送消息分组
       }
     }
   }

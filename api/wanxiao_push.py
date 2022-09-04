@@ -1,11 +1,11 @@
 import datetime
 import json
 
-from utils.bark import bark_push
 from utils.server_chan import server_push
 from utils.wechat_enterprise import wechat_enterprise_push
 from utils.email_push import email_push
 from utils.qmsg import qmsg_push
+from utils.qq import qq_push
 from utils.pipehub import pipe_push
 
 
@@ -55,9 +55,9 @@ def wanxiao_server_push(send_key, check_info_list):
     push_list.append(
         f"""
 >
-> [17wanxiaoCheckin](https://github.com/ReaJason/17wanxiaoCheckin-Actions)
+> [♥WanMeiXiaoYuanCheckin♥](https://github.com/zhoudedi/WanMeiXiaoYuanCheckin/)
 >
->期待你给项目的star✨
+>期待你的Fork✨
 """
     )
     return server_push(send_key, "健康打卡", "\n".join(push_list))
@@ -72,18 +72,21 @@ def wanxiao_email_push(send_email, send_pwd, receive_email, smtp_address, smtp_p
                 name = check['post_dict']['name']
             mail_msg_list.append(f"""<hr>
 <details>
-<summary style="font-family: 'Microsoft YaHei UI',serif; color: deepskyblue;">{name}：{check["type"]} 打卡结果：{check['res']}</summary>
+<summary>☺打卡数据抓包详情☞ </summary>
+<summary style="font-family: 'Microsoft YaHei UI',serif; color: deepskyblue;">姓名：{name} ；打卡类型：{check["type"]} ；打卡结果：{check['res']}</summary>
 <pre><code>
 {json.dumps(check['check_json'], sort_keys=True, indent=4, ensure_ascii=False)}
 </code></pre>
 </details>
+<HR />
 <details>
-<summary style="font-family: 'Microsoft YaHei UI',serif; color: black;" >>>>填写数据抓包详情（用于 updatainfo 数据的修改）<<<</summary>
+<summary style="font-family: 'Microsoft YaHei UI',serif; color: black;" >✌打卡填写数据抓包详情（用于 updatainfo 数据的修改）</summary>
 <pre><code>
 {json.dumps(check['post_dict']['updatainfo_detail'], sort_keys=True, indent=4, ensure_ascii=False)}
 </code></pre>
 </details>
-<span style="font-family: 'Microsoft YaHei UI',serif; color: lightskyblue;" >>>>打卡信息数据表格<<<</span>
+<HR />
+<span style="font-family: 'Microsoft YaHei UI',serif; color: lightskyblue;" ><center> ☟ 打卡信息数据表格✍ ☟ </center></span>
 <table id="customers">
 <tr>
 <th>Text</th>
@@ -147,8 +150,9 @@ def wanxiao_email_push(send_email, send_pwd, receive_email, smtp_address, smtp_p
 </style>"""
     mail_msg_list.append(css)
     mail_msg_list.append(f"""
-<h4><center> >>>>  <a href="https://github.com/ReaJason/17wanxiaoCheckin-Actions">17wanxiaoCheckin-Actions</a>
-<<<<</center></h4>
+    <HR />
+<h4><center>▷<a href="https://github.com/zhoudedi/WanMeiXiaoYuanCheckin/">♥WanMeiXiaoYuanCheckin♥</a>
+◁ </center></h4>
 """)
     return email_push(send_email, send_pwd, receive_email,
                       title="完美校园健康打卡", text="".join(mail_msg_list),
@@ -171,6 +175,24 @@ def wanxiao_qmsg_push(key, qq_num, type, check_info_list):
         else:
             push_list.append(check_info['errmsg'])
     return qmsg_push(key, qq_num, "\n".join(push_list), type)
+    
+def wanxiao_qq_push(key, qq_num, type, check_info_list):
+    utc8_time = datetime.datetime.utcnow() + datetime.timedelta(hours=8)
+    push_list = [f'[CQ:face,id=74] 打卡时间：{utc8_time.strftime("%Y")}年{utc8_time.strftime("%m")}月{utc8_time.strftime("%d")}日  {utc8_time.strftime("%H")}点{utc8_time.strftime("%M")}分{utc8_time.strftime("%S")}秒 [CQ:face,id=74]']
+    push_list.append(f"""项目：https://github.com/zhoudedi/WanMeiXiaoYuanCheckin/""")
+    for check_info in check_info_list:
+        if check_info["status"]:
+            name = check_info["post_dict"].get("username")
+            if not name:
+                name = check_info["post_dict"]["name"]
+            push_list.append(f"""\
+[CQ:face,id=54] 姓名：{name}；打卡类型：{check_info['type']} [CQ:face,id=54]
+[CQ:face,id=211]
+{check_info['res']}
+[CQ:face,id=211]""")
+        else:
+            push_list.append(check_info['errmsg'])
+    return qq_push(key, qq_num, "\n".join(push_list), type)
 
 
 def wanxiao_pipe_push(key, check_info_list):
@@ -202,21 +224,3 @@ def wanxiao_wechat_enterprise_push(corp_id, corp_secret, agent_id, to_user, chec
         else:
             push_list.append(check_info['errmsg'])
     return wechat_enterprise_push(corp_id, corp_secret, agent_id, to_user, "\n".join(push_list))
-
-
-def wanxiao_bark_push(device_key, group, check_info_list):
-    utc8_time = datetime.datetime.utcnow() + datetime.timedelta(hours=8)
-    title = f"""{utc8_time.strftime("%Y-%m-%d")}  健康打卡"""
-    push_list = []
-    for check_info in check_info_list:
-        if check_info["status"]:
-            name = check_info["post_dict"].get("username")
-            if not name:
-                name = check_info["post_dict"]["name"]
-            if check_info['res']['code'] == "10000":
-                push_list.append(f"""{name}：打卡{check_info['res']['msg']}😄😄😄""")
-            else:
-                push_list.append(f"""{name}：{check_info["res"]["data"]}😢😢😢""")
-        else:
-            push_list.append(check_info['errmsg'])
-    return bark_push(device_key, "\n".join(push_list), title, group)
