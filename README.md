@@ -3,15 +3,15 @@
 🌈17wanxiaoCheckin
 </h1>
 
-[![](https://img.shields.io/badge/Author-ReaJason-red "作者")](https://github.com/ReaJason/)
-[![](https://img.shields.io/badge/dynamic/json?logo=github&label=GitHub+Followers&labelColor=282c34&color=181717&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dgithub%26queryKey%3DReaJason&longCache=true "关注数")](https://github.com/ReaJason)
+[![](https://img.shields.io/badge/Author-zhoudedi-red "作者")](https://github.com/xiaozhou/)
+[![](https://img.shields.io/badge/dynamic/json?logo=github&label=GitHub+Followers&labelColor=282c34&color=181717&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dgithub%26queryKey%3Dzhoudedi&longCache=true "关注数")](https://github.com/zhoudedi)
 [![Bilibili](https://img.shields.io/badge/dynamic/json?logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAD7ElEQVR4nO2dW9WrMBCFK6ESkFAJSKiESqgEHCABCZWAhEpAAhL2ecik5dDc%2FpXLBDLfWnlqy0xmJ5BMQnq5CIIgCIIgCIIgCIIgCEIBAHQAemYfrgCunD6wAKAHsEKxALgx+bCQD8%2FS9tmgVqeDr1lLigDgZvDhXso+K9TyTBQRwRJ8AHjntl0Flh5QRAQK%2FmKxPeayWx2OXpBNBKiHvi34b7T2MC4pAvW6twR%2FRwkRKPizBN8CgEcuESj4Lwm+BwBjahEk+H8EwJRKhOaCDzW8e1JLfkUUH1NgmR3XmHffHR1l+72BSs8d7w8U+JDAnZERQMcV+CtUi7dNqFqibB4J7vtrq7xKCuAasbTMXCL4T+5aVk6+2xHUrWdhruAR6HIJcOeu2UHI8zyAe2ytWfEdWz9PVvQ8YAmIQ5dDAB9LFsMVAv8oMO2zAGrC5WNIarRiAuKR9jYEd9pY08aa6uUzIHGRdkgKd8pY0yc1WjEBAqypDYoAG0QAZkQAZkQAZkQAZk4vANQenjsSzS3I%2FwcSbXU5jQBUkRtdf4Rar90v8kSv3+I3ffCCSpk8I%2Fw+lgDkdI%2Fv2rEp2CaiWm1AsDQLlDAD+dlFXLMeAaCSeLZdaSFE5VUQNot38cKuEeBgAsSuG0flVZBmEanbXfNQAsS0fgBYIn2fIu3%2FBBMHEyBmDXlFfA8IzeHb+Ems4WAChKykrVA9ZfsQTL57jXzRg4A5wC%2FA8N4ADiZAZwm2XjW75Qh2KOTfA0p4kygPw28OJcCVgn3nDnYo2EwEYRgGH0qAMyICMCMCMCMCMCMCMCMCMCMCfP3qwHDOQ4AAUekTk8FaBRihJnZdYbvtCGC7LvmkM63GjVDINPFrQgCq5ETXfmMzI90FXzPvfqt7x4rEu%2FZaEcCUxFvgz2zO+BUn6UkoaEEAsptiMSX5e8FoRYCN7cVgb4Vq7U%2FH50Pq4JNP7Qiw8UFnJwcK+tXy+Wj6PLEvPgHSHv5UgwA1IQIwwyFAyLJin9RoxYgAzAQIkPwNmf26busC+OIx5TDqo5nDT+F%2FSS%2F9CYzwb+No49zNy2evkYv0LywGGAXUvp6eSneycqOic0w20k7CNgKE7jJunSGLACTCxF27ylmQc98T5MQUH49swd+I0HPXslLKnT0N+wnkrTKi9JZL%2FL9i1SorMmdeQ4TQQ7OFMxIMzGD45w8nUL1im7efENZLJpgPSw0pfz0cdt4U3230Td%2FTvx2R6d2FrHhEWLkq5PELOMsRPHCPnAZGv1xJteL7jbJiaW3sB2nDvPC%2FosSYvjRQz4cJ6n7KO3rYQL7M+L6nVtfDVRAEQRAEQRAEQRAEIZ5%2FSAXmdfXaoQsAAAAASUVORK5CYII%3D&label=bilibili+fans&labelColor=FE7398&color=282c34&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dbilibili%26queryKey%3D233683051&longCache=true)](https://space.bilibili.com/233683051)
 <br>
-![](https://img.shields.io/github/stars/ReaJason/17wanxiaoCheckin-Actions?style=social "Star数量")
-![](https://img.shields.io/github/forks/ReaJason/17wanxiaoCheckin-Actions?style=social "Fork数量")
+![](https://img.shields.io/github/stars/zhoudedi/WanMeiXiaoYuanCheckin?style=social "Star数量")
+![](https://img.shields.io/github/forks/zhoudedi/WanMeiXiaoYuanCheckin?style=social "Fork数量")
 <br>
-[![](https://img.shields.io/github/license/ReaJason/17wanxiaoCheckin-Actions "协议")](https://github.com/ReaJason/17wanxiaoCheckin/blob/master/LICENSE)
-[![](https://img.shields.io/github/v/release/ReaJason/17wanxiaoCheckin-Actions "release版本")](https://github.com/ReaJason/17wanxiaoCheckin/releases)
+[![](https://img.shields.io/github/license/zhoudedi/WanMeiXiaoYuanCheckin "协议")](https://github.com/zhoudedi/WanMeiXiaoYuanCheckin/blob/master/LICENSE)
+[![](https://img.shields.io/github/v/release/zhoudedi/WanMeiXiaoYuanCheckin "release版本")](https://github.com/zhoudedi/WanMeiXiaoYuanCheckin/releases)
 
 </div>
 
@@ -40,7 +40,7 @@
 ### 💃用户配置
 
 - 打卡用户配置文件位于：`conf/user.json`
-- 整个 json 文件使用一个 `[]` 列表用来存储打卡用户数据，每一个用户占据了一个 `{}`键值对，初次修改务必填写的数据为：**phone**、**password**、**device_id**（获取方法：[蓝奏云](https://lingsiki.lanzoui.com/iQamDmt165i)，下载解压使用）、**健康打卡的开关**（根据截图判断自己属于哪一类（不一定和我截图一模一样，好看就选 1）[【1】](https://cdn.jsdelivr.net/gh/ReaJason/17wanxiaoCheckin/Pictures/one.png)、[【2】](https://cdn.jsdelivr.net/gh/ReaJason/17wanxiaoCheckin/Pictures/two.png)），校内打卡开关（有则开），推送设置 **push**（推荐使用 qq 邮箱推送）。
+- 整个 json 文件使用一个 `[]` 列表用来存储打卡用户数据，每一个用户占据了一个 `{}`键值对，初次修改务必填写的数据为：**phone**、**password**、**device_id**（获取方法：[蓝奏云](https://lingsiki.lanzoui.com/iQamDmt165i)，下载解压使用）、**健康打卡的开关**（根据截图判断自己属于哪一类（不一定和我截图一模一样，好看就选 1）[【1】](https://cdn.jsdelivr.net/gh//zhoudedi/WanMeiXiaoYuanCheckin/Pictures/one.png)、[【2】](https://cdn.jsdelivr.net/gh//zhoudedi/WanMeiXiaoYuanCheckin/Pictures/two.png)），校内打卡开关（有则开），推送设置 **push**（推荐使用 qq 邮箱推送）。
 - 关于 `post_json`，如若打卡推送数据中无错误，则不用管，若有 null，或其他获取不到的情况，则酌情修改即可，和推送是一一对应的。
 - 如果多人打卡，则复制单个用户完整的 `{}`，紧接在上个用户其后即可。
 
@@ -138,8 +138,8 @@
 
 
 ## 🙋‍脚本有问题
-* 有问题可提 [issue](https://github.com/ReaJason/17wanxiaoCheckin-Actions/issues)
-* 也可加群反馈 [交流群](https://github.com/ReaJason/17wanxiaoCheckin-Actions/issues/30)
+* 有问题可提 [issue](https://github.com/zhoudedi/WanMeiXiaoYuanCheckin/issues)
+* 也可加群反馈 [交流群](https://github.com/zhoudedi/WanMeiXiaoYuanCheckin/issues/30)
 
 
 
