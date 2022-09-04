@@ -1,6 +1,6 @@
 <div align="center"> 
 <h1 align="center">
-🌈17wanxiaoCheckin
+🌈WanMeiXiaoYuanCheckin
 </h1>
 
 [![](https://img.shields.io/badge/Author-zhoudedi-red "作者")](https://github.com/xiaozhou/)
@@ -85,7 +85,7 @@
 
 - 云函数 — 函数服务 — 新建云函数
 
-- 自定义创建 — 本地上传 zip 包（17wanxiaoCheckin-SCF v*.*.zip：[蓝奏云](https://lingsiki.lanzoui.com/b0ekhmcxe)，密码：2333）
+- 自定义创建 — 本地上传 zip 包（WanMeiXiaoYuanCheckin-SCF.v*.*.*.zip)：[[ghproxy.com加速](https://ghproxy.com/https://github.com/zhoudedi/WanMeiXiaoYuanCheckin/releases/download/1.0.0/WanMeiXiaoYuanCheckin-SCF.v1.0.0.zip)]，下载解压使用）
 
 - 上传之后往下滑 — 触发器配置 — 自定义创建 — 触发周期：自定义触发 — Cron 表达式：0 0 6,14 * * * * — 完成 — 立即跳转
 
