@@ -139,7 +139,7 @@
 
 ## 🙋‍脚本有问题
 * 有问题可提 [issue](https://github.com/zhoudedi/WanMeiXiaoYuanCheckin/issues)
-* 也可加群反馈 [交流群](https://github.com/zhoudedi/WanMeiXiaoYuanCheckin/issues/30)
+* 也可加群反馈 [交流群](https://github.com/zhoudedi/WanMeiXiaoYuanCheckin/issues/1)
 
 
 
