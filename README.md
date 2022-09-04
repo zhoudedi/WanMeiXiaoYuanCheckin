@@ -100,7 +100,7 @@ pip3 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple # 如�
 pip3 install -r requirements.txt
 ```
 
-6、测试程序游戏下面命令
+6、测试程序运行下面命令
 ```
 python3 index.py
 
