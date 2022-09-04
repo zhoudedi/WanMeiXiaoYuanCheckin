@@ -3,10 +3,7 @@
             <!-- SEO header -->
             <h1 style="display: none">完美校园自动打卡</h1>
             
-            <div class="markdown-body">
-              <div class="note note-info">
-            <p>今天你打卡了吗？</p>
-          </div>
+            
 <a id="more"></a>
 
 <div class="note note-success">
