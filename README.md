@@ -40,7 +40,7 @@
 ### 💃用户配置
 
 - 打卡用户配置文件位于：`conf/user.json`
-- 整个 json 文件使用一个 `[]` 列表用来存储打卡用户数据，每一个用户占据了一个 `{}`键值对，初次修改务必填写的数据为：**phone**、**password**、**device_id**（获取方法：[蓝奏云](https://lingsiki.lanzoui.com/iQamDmt165i)，下载解压使用）、**健康打卡的开关**（根据截图判断自己属于哪一类（不一定和我截图一模一样，好看就选 1）[【1】](https://cdn.jsdelivr.net/gh//zhoudedi/WanMeiXiaoYuanCheckin/Pictures/one.png)、[【2】](https://cdn.jsdelivr.net/gh//zhoudedi/WanMeiXiaoYuanCheckin/Pictures/two.png)），校内打卡开关（有则开），推送设置 **push**（推荐使用 qq 邮箱推送）。
+- 整个 json 文件使用一个 `[]` 列表用来存储打卡用户数据，每一个用户占据了一个 `{}`键值对，初次修改务必填写的数据为：**phone**、**password**、**device_id**（获取方法：[ghproxy.com加速](https://ghproxy.com/https://github.com/zhoudedi/WanMeiXiaoYuanCheckin/releases/download/1.0.0/RegisterDeviceID.zip)，下载解压使用）、**健康打卡的开关**（根据截图判断自己属于哪一类（不一定和我截图一模一样，好看就选 1）[【1】](https://cdn.jsdelivr.net/gh//zhoudedi/WanMeiXiaoYuanCheckin/Pictures/one.png)、[【2】](https://cdn.jsdelivr.net/gh//zhoudedi/WanMeiXiaoYuanCheckin/Pictures/two.png)），校内打卡开关（有则开），推送设置 **push**（推荐使用 qq 邮箱推送）。
 - 关于 `post_json`，如若打卡推送数据中无错误，则不用管，若有 null，或其他获取不到的情况，则酌情修改即可，和推送是一一对应的。
 - 如果多人打卡，则复制单个用户完整的 `{}`，紧接在上个用户其后即可。
 
