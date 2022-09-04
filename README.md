@@ -74,8 +74,92 @@
 
 ### 🤝统一推送配置
 
-- 统一推送配置文件位于：`conf/push.json`
+- 统一推送配置文件位于：`conf/push.json` 内置了QQ推送，需要开启QQ推送得添加好友2933206697
 - 若多用户打卡使用统一推送而不是个别单独推送则在此文件下进行推送的配置
+
+
+
+## 💦使用方法（服务器）
+
+1、- 服务器自行安装Python3、pip3 【版本内置了QQ推送，需要开启QQ推送得添加好友2933206697】
+
+2、- ssh连接服务器可以通过- ```wget https://ghproxy.com/https://github.com/zhoudedi/WanMeiXiaoYuanCheckin/releases/download/1.0.0/WanMeiXiaoYuanCheckin.v1.0.0.tar.gz
+    ``` 下载本项目。
+
+  - 或者下载项目通过本地上传 tar.gz 包（WanMeiXiaoYuanCheckin-SCF.v*.*.*.tar.gz)：[[ghproxy.com加速](https://ghproxy.com/https://github.com/zhoudedi/WanMeiXiaoYuanCheckin/releases/download/1.0.0/WanMeiXiaoYuanCheckin.v1.0.0.tar.gz)]，下载。
+
+3、- 上传文件到服务器用tar -zxvf 进行解压 然后cd 进入项目目录
+
+4、- 编辑conf目录的签到程序 push.json 和 user.json 配置文件 — 根据上方的用户配置文件介绍以及里面的注释进行设置【第一次使用推荐 QQ 邮箱推送，数据推送全面；内置了QQ推送，需要开启QQ推送得添加好友2933206697】
+
+5、- 在项目根目录执行安装程序依赖，下面两个命令
+pip3 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple # 如果安装慢，尝试这行命令切换 pip 为清华源
+pip3 install -r requirements.txt
+
+6、- 测试程序游戏下面命令
+python3 index.py
+#会输出运行结果：
+2022-09-04 22:07:04 - [INFO] - 小周 正在打卡中......
+2022-09-04 22:07:06 - [INFO] - xxx，登录成功
+2022-09-04 22:07:06 - [INFO] - x-xxx大学，获取个人信息成功
+2022-09-04 22:07:07 - [INFO] - 完美校园第一类健康打卡post参数获取成功
+2022-09-04 22:07:07 - [INFO] - {'msg': '成功', 'code': '10000', 'data': 1}
+2022-09-04 22:07:07 - [INFO] - 当前并未开启校内打卡，暂不进行打卡操作
+2022-09-04 22:07:07 - [INFO] - 签到成功,今日获得 0 粮票
+2022-09-04 22:07:09 - [INFO] - 校园头条任务已完成
+2022-09-04 22:07:10 - [INFO] - 查看课表任务已完成
+2022-09-04 22:07:10 - [INFO] - 活跃奖励(xxxx)：x个粮票，操作成功
+2022-09-04 22:07:13 - [INFO] - 邮箱推送成功
+2022-09-04 22:07:13 - [INFO] - QQ推送服务成功
+
+7、- 确认可以运行后，设置定时任务
+crontab -e
+#添加以下行（每天 06:30 运行，记得替换下面的 /usr/bin/python3 /root/WanMeiXiaoYuanCheckin/index.py 设置成你的Python3 和项目index.py的绝对路径）：
+
+30 6 * * * /usr/bin/python3 /root/WanMeiXiaoYuanCheckin/index.py
+
+
+- 测试 — 若弹框【检测到您的函数未部署......】选是 — 查看执行日志以及推送信息（执行失败请带上执行日志完整截图反馈）
+
+- 第一类健康打卡成功结果：`{'msg': '成功', 'code': '10000', 'data': 1}`，显示打卡频繁也算
+
+- 第二类健康打卡成功结果：`{'code': 0, 'msg': '成功'}`
+
+- 校内打卡成功结果：`{'msg': '成功', 'code': '10000', 'data': 1}`
+
+- 出现成功，如果邮箱推送表格没有 None 值或支付宝小程序的健康助手有信息则是真正的打卡成功
+
+- 如果你们学校会记录打卡成功与否可直接在 **支付宝小程序** 查看是否记录上去（手机 app 登录的话之前获取的 device_id 就失效了）
+
+- 最后检查推送数据，如果表格中有 None，请根据第二行的信息，搭配第一行推送信息的格式，修改配置文件
+
+  - 打开第一行，找到 updatainfo 这个东西，下面的有 null 的对应就是表格中的 None，记住它的 propertyname
+
+  - 打开第二行，找到对应 perpertyname 的部分，根据 checkValue 的 text 选择你需要的选项，温度自己填个值就可
+
+  - 打开配置文件，找到 post_json 下的 updatainfo，在里面加入你需要修改的值，格式和第一行里面的打卡数据一样
+
+  - ```
+    "updatainfo":[
+    	{
+        	"propertyname": "temperature",  // 这个为第一行中找到值为 null 的那一项
+            "value": "35.7"  // 这个值为你想改的值，第二行中获取，如果是温度，自己填自己想的即可
+        },
+        {
+        	"propertyname": "wengdu",
+        	"value": "36.4"
+        }
+    ]
+    ```
+
+     
+
+- 由于前面使用软件获取了 device_id，所以请使用 **支付宝小程序** 查看打卡结果是否记录上去，以免手机登录 device_id 失效
+
+- 由于前面使用软件获取了 device_id，所以请使用 **支付宝小程序** 查看打卡结果是否记录上去，以免手机登录 device_id 失效
+
+- 由于前面使用软件获取了 device_id，所以请使用 **支付宝小程序** 查看打卡结果是否记录上去，以免手机登录 device_id 失效
+
 
 
 
@@ -91,7 +175,7 @@
 
 - 函数管理 — 函数配置 — 编辑 — 执行超时时间：900 — 保存
 
-- 函数代码 — `src/conf/user.json` — 根据上方的用户配置文件介绍以及里面的注释进行设置【第一次使用推荐 QQ 邮箱推送，数据推送全面】
+- 函数代码 — `src/conf/user.json` — 根据上方的用户配置文件介绍以及里面的注释进行设置【第一次使用推荐 QQ 邮箱推送，数据推送全面；内置了QQ推送，需要开启QQ推送得添加好友2933206697】
 
 - 测试 — 若弹框【检测到您的函数未部署......】选是 — 查看执行日志以及推送信息（执行失败请带上执行日志完整截图反馈）
 
