@@ -170,7 +170,7 @@ crontab -e
 
 ## 💦使用方法（云函数）
 
-> 详细图文教程请前往：[博客](https://reajason.top/2021/03/19/17wanxiaocheckinscf/)，请所有步骤及常见问题通读一遍再动手
+> 详细图文教程请前往：[教程]([https://reajason.top/2021/03/19/17wanxiaocheckinscf/](https://github.com/zhoudedi/WanMeiXiaoYuanCheckin/blob/master/jc.md))，请所有步骤及常见问题通读一遍再动手
 
 - 云函数 — 函数服务 — 新建云函数
 
@@ -234,7 +234,7 @@ crontab -e
 
 ## 🎯ToDo
 
-> 本人希望自己代码能越写越好，因此在功能完善的情况下不断重构代码到满意的结果，希望能和想要技术交流的小伙伴一起学习（https://reajason.top）
+> 本人希望自己代码能越写越好，因此在功能完善的情况下不断重构代码到满意的结果，希望能和想要技术交流的小伙伴一起学习（[WanMeiXiaoYuanCheckin](https://github.com/zhoudedi/WanMeiXiaoYuanCheckin/blob/master/jc.md)）
 
 - [ ] 函数式编程方式重构代码
 - [ ] 更优雅地处理错误和抛出异常
