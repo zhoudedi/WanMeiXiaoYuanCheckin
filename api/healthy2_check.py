@@ -5,7 +5,7 @@
 @author：ReaJason
 @email_addr：reajason@163.com
 @blog_website：https://reajason.top
-@last_modify：2021/04/24 
+@last_modify：2021/04/24
 """
 import time
 import requests
