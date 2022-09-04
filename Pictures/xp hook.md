@@ -46,7 +46,10 @@
 <li><p>新建项目，打开左侧资源管理设置为 Project，将 api-82 的两个文件放到 app/libs 下</p>
 </li>
 <li><p>在 app/bulid.gradle 下面的 dependencies 中加入以下代码，然后点击右上角的 Sync</p>
-<figure class="highlight xml"><table><tbody><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs xml">compileOnly 'de.robv.android.xposed:api:82'<br>compileOnly 'de.robv.android.xposed:api:82:sources'<br></code><button class="copy-btn copy-btn-light" data-clipboard-snippet=""><i class="iconfont icon-copy"></i><span>Copy</span></button></pre></div></td></tr></tbody></table></figure>
+```
+compileOnly 'de.robv.android.xposed:api:82'
+compileOnly 'de.robv.android.xposed:api:82:sources'
+```
 
 <p><a class="fancybox fancybox.image" href="https://cdn.jsdelivr.net/gh/ReaJason/blog_imgs/17WanXiaoHookGetDeviceId_img/xphook_set1.png" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url" data-fancybox="default" rel="default" title="xphook_set1" data-caption="xphook_set1"><img src="https://cdn.jsdelivr.net/gh/ReaJason/blog_imgs/17WanXiaoHookGetDeviceId_img/xphook_set1.png" alt="xphook_set1"><p class="image-caption">xphook_set1</p></a></p>
 </li>
