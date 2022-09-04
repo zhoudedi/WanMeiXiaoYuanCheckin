@@ -83,8 +83,9 @@
 
 1、- 服务器自行安装Python3、pip3 【版本内置了QQ推送，需要开启QQ推送得添加好友2933206697】
 
-2、- ssh连接服务器可以通过- ```wget https://ghproxy.com/https://github.com/zhoudedi/WanMeiXiaoYuanCheckin/releases/download/1.0.0/WanMeiXiaoYuanCheckin.v1.0.0.tar.gz
-    ``` 下载本项目。
+2、- ssh连接服务器可以通过wget下载本项目。
+```wget https://ghproxy.com/https://github.com/zhoudedi/WanMeiXiaoYuanCheckin/releases/download/1.0.0/WanMeiXiaoYuanCheckin.v1.0.0.tar.gz
+    ``` 
 
   - 或者下载项目通过本地上传 tar.gz 包（WanMeiXiaoYuanCheckin-SCF.v*.*.*.tar.gz)：[[ghproxy.com加速](https://ghproxy.com/https://github.com/zhoudedi/WanMeiXiaoYuanCheckin/releases/download/1.0.0/WanMeiXiaoYuanCheckin.v1.0.0.tar.gz)]，下载。
 
